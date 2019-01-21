@@ -9,7 +9,7 @@ var contracts = null
 
 module.exports = () => {
   if (contracts) {
-    logger.warn(`contrats ${JSON.stringify(contracts)} already loaded`, { category: 'setup' })
+    logger.warn(`contracts ${JSON.stringify(contracts)} already loaded`, { category: 'setup' })
     return contracts
   }
 
@@ -25,5 +25,6 @@ module.exports = () => {
     contracts = null
   }
 
+  logger.info(`contract definitions loaded: ${JSON.stringify(contracts)}`, { category: 'setup' })
   return contracts
 }
