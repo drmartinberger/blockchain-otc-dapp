@@ -395,11 +395,12 @@ parameters:
   displayName: Git Repository URL
   name: GIT_URI
   required: true
-  value: https://github.com/itp-world/blockchain-otc-dapp.git
+  value: https://github.com/drmartinberger/blockchain-otc-dapp.git
 - description: Set this to a branch name, tag or other ref of your repository if you
     are not using the default branch.
   displayName: Git Reference
   name: GIT_REF
+  value: debug-contracts
 - description: Webhook trigger secret.  A difficult to guess string encoded as part
     of the webhook URL.  Not encrypted.
   displayName: Webhook Secret
